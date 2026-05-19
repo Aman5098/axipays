@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import CheckoutForm from "./components/CheckoutForm";
 import Dashboard from "./components/Dashboard";
 import "./App.css";
@@ -6,12 +6,12 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/checkout" element={<CheckoutForm />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
